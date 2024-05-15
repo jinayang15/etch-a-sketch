@@ -17,7 +17,10 @@ function addGridEventListeners() {
     const blocks = document.querySelectorAll(".block");
     blocks.forEach((block) => {
         block.addEventListener("mouseover", () => {
-            block.style.backgroundColor = "blueviolet";
+            const red = generateRGBValue();
+            const green = generateRGBValue();
+            const blue = generateRGBValue();
+            block.style.backgroundColor = `rgb(${red},${green},${blue})`;
         });
     });
 }
@@ -65,6 +68,11 @@ function popupHide() {
     } else {
         alert("Please enter integers between 1 and 100 inclusive.")
     }
+}
+
+function generateRGBValue() {
+    const RGB_MAX = 255;
+    return Math.floor(Math.random() * RGB_MAX + 1);
 }
 
 function main() {
