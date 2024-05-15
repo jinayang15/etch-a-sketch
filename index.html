@@ -7,16 +7,18 @@
     </head>
     <body>
         <button id="new-grid">Create a new grid</button>
-        <div id="pop-up-box">
-            <div class="input container">
-                <label for="num-rows">Rows:</label>
-                <input name="num-rows" type="text" placeholder="Enter number of rows" required>
+        <div id="fullscreen-container">
+            <div id="pop-up-box">
+                <div class="input container">
+                    <label for="num-rows">Rows:</label>
+                    <input name="num-rows" type="text" placeholder="Enter number of rows" required>
+                </div>
+                <div class="input container">
+                    <label for="num-cols">Columns:</label>
+                    <input name="num-cols" type="text" placeholder="Enter number of columns" required>
+                </div>
+                <button id="submit">Submit</button>
             </div>
-            <div class="input container">
-                <label for="num-cols">Columns:</label>
-                <input name="num-cols" type="text" placeholder="Enter number of columns" required>
-            </div>
-            <button id="submit">Submit</button>
         </div>
         <div class="grid container"></div>
     </body>

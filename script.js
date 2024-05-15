@@ -34,9 +34,10 @@ function main() {
     const gridContainer = document.querySelector(".grid.container");
     const createGridButton = document.querySelector("#new-grid");
     const popup = document.querySelector("#pop-up-box");
+    const popupBG = document.querySelector("#fullscreen-container")
     createGridButton.addEventListener("click", () => {
         popup.style.display = "flex";
-        createGridButton.style.display = "none";
+        popupBG.style.display = "block";
     });
 
     const submitButton = document.querySelector("#submit");
@@ -51,7 +52,7 @@ function main() {
             }
             createGrid(rows, cols);
             popup.style.display = "none";
-            createGridButton.style.display = "block";
+            popupBG.style.display = "none";
             rowInput.value = "";
             colInput.value = "";
         } else {
