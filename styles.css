@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-height: 80vw;
+    max-width: 80vh;
+    aspect-ratio: 1;   
+}
+
+.row {
+    display: flex;
+    flex: 1;
+}
+
+.row > div {
+    border: solid black 1px;
+    aspect-ratio: 1;
+    flex: 1;
+}
