@@ -12,7 +12,13 @@ body {
     align-items: center;
 }
 
-#new-grid {
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+#new-grid, #clear{
     color: white;
     background-color: rgb(78, 177, 216);
     padding: 16px 32px;
