@@ -13,6 +13,12 @@ function createGrid(rows, cols) {
 
 function main() {
     createGrid(16, 16);
+    const blocks = document.querySelectorAll(".row div");
+    blocks.forEach((block) => {
+        block.addEventListener("mouseover", () => {
+            block.style.backgroundColor = "blueviolet";
+        });
+    });
 }
 
 main();
