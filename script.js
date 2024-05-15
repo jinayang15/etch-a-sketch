@@ -46,6 +46,8 @@ function popupShow() {
 
 function popupHide() {
     const gridContainer = document.querySelector(".grid.container");
+    const popup = document.querySelector("#pop-up-box");
+    const popupBG = document.querySelector("#fullscreen-container")
     const rowInput = document.querySelector("[name='num-rows']");
     const colInput = document.querySelector("[name='num-cols']");
 
@@ -68,13 +70,13 @@ function popupHide() {
 function main() {
     createGrid(16, 16);
     const createGridButton = document.querySelector("#new-grid");
-    createGridButton.addEventListener("click", popupShow());
+    createGridButton.addEventListener("click", popupShow);
 
     const submitButton = document.querySelector("#submit");
-    submitButton.addEventListener("click", popupHide());
+    submitButton.addEventListener("click", popupHide);
 
     const clearButton = document.querySelector("#clear");
-    clearButton.addEventListener("click", clearGrid())
+    clearButton.addEventListener("click", clearGrid)
 }
 
 main();
