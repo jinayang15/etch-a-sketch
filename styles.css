@@ -98,7 +98,6 @@ label {
 .row {
     display: flex;
     justify-content: center;
-    width: auto;
     height: 100%;
 }
 
